@@ -6,13 +6,13 @@
 #    By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/09 10:09:08 by kmeixner          #+#    #+#              #
-#    Updated: 2022/06/27 19:54:23 by kmeixner         ###   ########.fr        #
+#    Updated: 2022/06/28 20:25:50 by kmeixner         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	poly
 
-SRCS		=	main.cpp Animal.cpp Dog.cpp Cat.cpp
+SRCS		=	main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
 
 CC			=	c++
 
