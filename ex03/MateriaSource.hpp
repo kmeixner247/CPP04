@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 17:31:08 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/29 17:40:34 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/29 21:20:30 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,5 @@ public:
 
 private:
 	AMateria *_memory[4];
-};
+};	
 #endif

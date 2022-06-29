@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 17:32:02 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/29 17:43:35 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/29 22:04:40 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,17 @@ MateriaSource::MateriaSource()
 
 MateriaSource::MateriaSource(MateriaSource const &rhs)
 {
+	int i = 0;
+	while (rhs._memory[i])
+		this->_memory[i] = rhs._memory[i];
 }
 
 MateriaSource &MateriaSource::operator=(MateriaSource const &rhs)
 {
+	int i = 0;
+	while (rhs._memory[i])
+		this->_memory[i] = rhs._memory[i];
+	return (*this);
 }
 
 MateriaSource::~MateriaSource()
@@ -45,7 +52,9 @@ AMateria *MateriaSource::createMateria(std::string const &type)
 	while (this->_memory[i] && this->_memory[i]->getType().compare(type))
 		i++;
 	if (i < 4)
+	{
 		return (this->_memory[i]->clone());
+	}
 	else
 		return (0);
 }

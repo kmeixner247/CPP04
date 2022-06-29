@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 16:47:02 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/29 17:00:17 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/29 21:42:24 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,13 @@
 #define CHARACTER_HPP
 #include <iostream>
 #include <string>
-#include "Amateria.hpp"
+#include "AMateria.hpp"
 class Character : public ICharacter
 {
 public:
 	Character();
 	Character(Character &rhs);
+	Character(std::string const name);
 	~Character();
 	Character &operator=(Character const &rhs);
 	std::string const &getName() const;

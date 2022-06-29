@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 15:23:17 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/29 17:25:31 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/29 21:52:07 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ public:
 	Cure(Cure const &rhs);
 	Cure &operator=(Cure const &rhs);
 	AMateria *clone() const;
-	void use(ICharacter &target) const;
+	virtual void use(ICharacter &target) const;
 private:
 };
 
