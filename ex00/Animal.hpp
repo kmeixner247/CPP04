@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 15:13:47 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/27 19:57:36 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/28 20:30:18 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ public:
 	Animal();
 	Animal(Animal const &rhs);
 	Animal &operator=(Animal const &rhs);
-	~Animal();
+	virtual ~Animal();
 	virtual void makeSound() const;
 	std::string getType() const;
 protected:
