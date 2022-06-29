@@ -6,14 +6,13 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 19:52:26 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/29 14:51:53 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/29 14:58:50 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
-#include "Brain.hpp"
 
 int main()
 {
