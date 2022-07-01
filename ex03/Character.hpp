@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 16:47:02 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/29 21:42:24 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/07/01 13:05:25 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ public:
 
 private:
 	std::string _name;
-	AMateria *inventory[4];
+	AMateria *_inventory[4];
 };
 #endif	

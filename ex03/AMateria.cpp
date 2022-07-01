@@ -6,13 +6,13 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 15:31:32 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/29 17:17:35 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/07/01 13:06:44 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AMateria.hpp"
 
-AMateria::AMateria()
+AMateria::AMateria() : _type("default")
 {
 }
 
