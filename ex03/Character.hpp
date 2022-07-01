@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 16:47:02 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/07/01 13:05:25 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/07/01 17:02:45 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ public:
 	~Character();
 	Character &operator=(Character const &rhs);
 	std::string const &getName() const;
+	AMateria *getMateriaAddr(int index) const;
 	void equip(AMateria *m);
 	void unequip(int index);
 	void use(int index, ICharacter& target);
